@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto Flex", sans-serif;
+}
+
+/* Section hero */
+#hero {
+    background: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 1%;
+}
+
+nav {
+    background-color: rgba(0,0,0,0.4);
+    text-align: center;
+    padding: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+    font-size: 1.3em;
+}
+
+a:hover {
+    color: crimson;
+}
+
+#bandeau {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-color:rgb(255, 255, 255, 0.7);
+}
+
+h1 {
+    color: black;
+    font-size: 4em;
+    font-family: "Raleway", sans-serif;
+}
+
+h2 {
+    color: firebrick;
+    font-family: "Raleway", sans-serif;
+  
+}
+
+#contenu {
+    text-align: center;
+    padding: 10%;
+}
+
+#contenu a {
+    color: crimson;
+    border: 1px solid crimson;
+    border-radius: 15px;
+    padding: 15px;
+    transition: ease 1s;
+}
+
+#contenu a:hover {
+    color: white;
+    background-color: rgba(178,32,19,0.8);
+}
+
+/* Section apropos */
+#apropos {
+    background-color: white;
+    display: flex;
+}
+
+#apropos-image {
+    padding: 20px;
+    flex: 1;
+}
+
+#apropos-image img {
+    flex: 1;
+    max-width: 100%;
+}
+
+#apropos-texte {
+    padding: 20px;
+    line-height: 3.5em;
+    flex: 2;
+    text-align: justify;
+}
+
+
+/* Section services */
+#services {
+    display: flex;
+    background-color: darkslategrey;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.services-item p {
+    text-align: justify;
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    color: black;
+}
+
+footer a:hover {
+    color: crimson;
+}
+
+.social {
+    padding: 20px;
+}
+
+/* Media query mobile */
+@media screen and (max-width: 576px){
+    nav a {
+        display: block;
+    }
+    #apropos {
+        flex-direction: column;
+    }
+    #services {
+        flex-direction: column;
+    }
+}
